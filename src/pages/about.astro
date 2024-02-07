@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+
+import PageLayout from "@/layouts/Base";
+import aboutImg from "@/assets/about-astro.png";
+
+const meta = {
+	title: "About",
+	description: "introduce",
+};
+---
+
+<PageLayout meta={meta}>
+	<div class="space-y-6">
+		<h1 class="title">About</h1>
+		<p>I'm Hugo ~ a software engineer at Sotatek</p>
+		<p>Here are my tech stack</p>
+		<ul class="list-inside list-disc">
+			<li>Backend ~ NodeJS/Javascript/Golang</li>
+			<li>Frontend ~ ReactJS/Vue</li>
+			<li>Database ~ MongoDB/Redis/MySQL/Postgres</li>
+			<li>Message Broker ~ Kafka</li>
+			<li>Cloud ~ AWS</li>
+			<li>IAC ~ Terraform</li>
+			<li>Devops ~ K8S/Docker/CI-CD/gitlab-ci/github-actions</li>
+		</ul>
+	</div>
+</PageLayout>
